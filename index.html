@@ -205,23 +205,25 @@
 
 <body>
 
+<div class="nav-backdrop" onclick="closeNav()" aria-hidden="true"></div>
+
 <!-- NAV BAR -->
 <nav class="top-nav">
   <div class="nav-inner">
     <a href="#" class="nav-logo" aria-label="TermiCrack - Inicio">Termi<span>Crack</span></a>
-    <button class="nav-toggle" aria-label="Abrir menú" onclick="document.body.classList.toggle('nav-open')">
+    <button class="nav-toggle" aria-label="Abrir menú" onclick="toggleNav()">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="#descripcion">Producto</a></li>
-      <li><a href="#beneficios">Beneficios</a></li>
-      <li><a href="#aplicaciones">Aplicaciones</a></li>
-      <li><a href="#perforacion">Perforación</a></li>
-      <li><a href="#mezcla">Mezcla</a></li>
-      <li><a href="#seguridad">Seguridad</a></li>
-      <li><a href="#precios">Precios</a></li>
-      <li><a href="#calculadora">Calculadora</a></li>
-      <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+      <li><a href="#descripcion" onclick="closeNav()">Producto</a></li>
+      <li><a href="#beneficios" onclick="closeNav()">Beneficios</a></li>
+      <li><a href="#aplicaciones" onclick="closeNav()">Aplicaciones</a></li>
+      <li><a href="#perforacion" onclick="closeNav()">Perforación</a></li>
+      <li><a href="#mezcla" onclick="closeNav()">Mezcla</a></li>
+      <li><a href="#seguridad" onclick="closeNav()">Seguridad</a></li>
+      <li><a href="#precios" onclick="closeNav()">Precios</a></li>
+      <li><a href="#calculadora" onclick="closeNav()">Calculadora</a></li>
+      <li><a href="#contacto" class="nav-cta" onclick="closeNav()">Contacto</a></li>
     </ul>
   </div>
 </nav>
@@ -1191,6 +1193,20 @@ document.querySelectorAll('.gallery-item').forEach((item, i) => {
     }
   });
 });
+
+function toggleNav() {
+  document.body.classList.toggle('nav-open');
+  if (document.body.classList.contains('nav-open')) {
+    document.documentElement.style.overflow = 'hidden';
+  } else {
+    document.documentElement.style.overflow = '';
+  }
+}
+
+function closeNav() {
+  document.body.classList.remove('nav-open');
+  document.documentElement.style.overflow = '';
+}
 </script>
 </body>
 </html>
