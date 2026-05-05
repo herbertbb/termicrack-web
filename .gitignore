@@ -9,3 +9,10 @@ wheels/
 # Virtual environments
 .venv
 docs/
+
+# Archivos de Apoyo y Planificación
+.opencode/
+.github/
+.vscode/
+
+
