@@ -3,4 +3,7 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/termicrack/public_html
     - export REPOPATH=/home/termicrack/repositories/termicrack-web
-    - /usr/bin/rsync -av --exclude='.git/' --exclude='cgi-bin/' --exclude='api/' --exclude='ventas/' --exclude='trabajos/' ${REPOPATH}/ ${DEPLOYPATH}/
+    - /bin/cp ${REPOPATH}/index.html ${DEPLOYPATH}/
+    - /bin/cp -r ${REPOPATH}/assets/* ${DEPLOYPATH}/assets/
+    
+    - rm -rf ${DEPLOYPATH}/.git ${DEPLOYPATH}/cgi-bin ${DEPLOYPATH}/.cpanel.yml
