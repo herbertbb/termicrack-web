@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/termicrack/www
+    - rsync -av --exclude='.git/' --exclude='cgi-bin/' --exclude='api/' --exclude='ventas/' --exclude='trabajos/' ./ $DEPLOYPATH/
