@@ -74,13 +74,13 @@ Para desarrollo local, puedes usar cualquier servidor HTTP estático:
 
 ```bash
 # Con Python
-python -m http.server 8000
+python -m http.server 8001
 
 # Con Node.js (npx http-server)
 npx http-server
 ```
 
-Luego visita `http://localhost:8000` en tu navegador.
+Luego visita `http://localhost:8001` en tu navegador.
 
 ## Información del Producto
 
@@ -90,7 +90,7 @@ Luego visita `http://localhost:8000` en tu navegador.
 - **Presentación**: Caja 20 kg (4 × 5 kg), bolsa individual 5 kg
 - **Diámetro de broca recomendado**: Ø 32-51 mm (óptimo 40-51 mm)
 - **Vida útil**: 12 meses (bolsa sin abrir)
-- **Origen**: Dextec Oy Ltd — Finlandia (35 años de experiencia)
+- **Vendedor**: ECOBISEC JYH SAC — Arequipa (10 años de experiencia)
 
 ## Contacto
 
@@ -98,8 +98,7 @@ Luego visita `http://localhost:8000` en tu navegador.
 - **Teléfono / WhatsApp**: +51 930 646 411
 - **Email**: infomes@termicrack.com
 - **Web**: [https://termicrack.com](https://termicrack.com) / [https://cemento.net.pe](https://cemento.net.pe)
-- **Fabricante**: [Dextec Oy Ltd](https://www.ter-mite.com)
 
 ## Licencia
 
-Todos los derechos reservados © 2025 TermiCrack — ECOBISEC JYH SAC.
+Todos los derechos reservados © 2025 — ECOBISEC JYH SAC. Uso comercial exclusivo para distribución de TermiCrack. Prohibida la reproducción total o parcial sin autorización expresa. RUC: 20558318318
