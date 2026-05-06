@@ -4,6 +4,7 @@ deployment:
     - export DEPLOYPATH=/home/termicrack/www
     - export GIT_REPO=/home/termicrack/repositories/termicrack-web
 
+    - cp $GIT_REPO/favicon.ico $DEPLOYPATH/
     - mkdir -p $DEPLOYPATH/assets/css
     - cp -R $GIT_REPO/index.html $DEPLOYPATH/
     - cp -R $GIT_REPO/assets $DEPLOYPATH/
