@@ -125,7 +125,9 @@ function actualizarWhatsApp (cajas, bolsas, kg) {
 }
 
 // Valores por defecto para el link placeholder
-actualizarWhatsApp(0, 0, 0);
+document.addEventListener('DOMContentLoaded', function () {
+  actualizarWhatsApp(0, 0, 0);
+});
 
 /* ---- GALLERY MODAL ---- */
 let galleryIndex = 0;
