@@ -2057,3 +2057,24 @@ footer {
     display: inline;
   }
 }
+
+
+.contact-contrast {
+        background: rgba(255,255,255,0.85);
+        color: #222 !important;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px 0 rgba(0,0,0,0.07);
+        padding: 1.5em 1em;
+        margin-bottom: 1em;
+      }
+      .contact-contrast a {
+        color: #0d47a1;
+        text-decoration: underline;
+      }
+      .contact-contrast strong {
+        color: #b71c1c;
+      }
+
+      .contact-contrast h3 {
+  color: #222 !important;
+}
