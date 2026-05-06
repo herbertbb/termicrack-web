@@ -121,7 +121,8 @@ function actualizarWhatsApp (cajas, bolsas, kg) {
   }
   msg += '.';
   const url = 'https://wa.me/51930646411?text=' + encodeURIComponent(msg);
-  document.getElementById('whatsapp-link').href = url;
+  const waLink = document.getElementById('whatsapp-link');
+  if (waLink) waLink.href = url;
 }
 
 // Valores por defecto para el link placeholder
